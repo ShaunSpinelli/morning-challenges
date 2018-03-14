@@ -16,4 +16,11 @@
 
 def vowels (string)
   # Your code here
+  vowel_arr = []
+  i = 0
+  loop do
+    vowel_arr.push(string[i]) if ['a','A','e','E','i','I','o','O','u','U'].include? string[i]
+    return vowel_arr if string[i] == nil
+    i +=1
+  end  
 end
