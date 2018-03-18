@@ -18,8 +18,9 @@
 #Try writing it on a whiteboard or paper first
 def in_array (needle, haystack)
   # Your code here
-  haystack.each do |word|
-    return true if word == needle
-  end
-  false  
+ puts haystack.each {|word| true if word == needle} #? true : false
+  
+
 end
+
+in_array("hello", ["hi", "howdy", "hello"])
