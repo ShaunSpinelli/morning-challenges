@@ -22,6 +22,7 @@
 #Try writing it on a whiteboard or paper first
 def in_array_advanced (needle, haystack, strict)
   # Your code here
+<<<<<<< HEAD
   # if strict == false
   #   haystack.each { |word| return true if word == needle.downcase}
   # else
@@ -33,4 +34,6 @@ def in_array_advanced (needle, haystack, strict)
   haystack.each { |word| return true if word == needle}
   false
 
+=======
+>>>>>>> a27e985a082512b8706ff996c21bcd6320db76f3
 end
