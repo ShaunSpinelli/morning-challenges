@@ -18,7 +18,7 @@
 #Try writing it on a whiteboard or paper first
 def in_array (needle, haystack)
   # Your code here
- puts haystack.each {|word| true if word == needle} #? true : false
+ haystack.each {|word| true if word == needle} #? true : false
   
 
 end
