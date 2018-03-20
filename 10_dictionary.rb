@@ -22,4 +22,25 @@
 
 class Dictionary
   # Your code here
+  #init a hash on object creation
+  def initialize
+    @dictionary_hash = {}
+  end 
+
+  def add_word(word, definition)
+    @dictionary_hash[word] = definition
+  end
+
+  def total_words
+    count = 0
+    @dictionary_hash.each do |item|
+      count +=1
+    end
+    count
+  end
+
+  def lookup(word)
+    @dictionary_hash[word]
+  end
+
 end
