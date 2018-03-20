@@ -4,7 +4,7 @@
 #
 # This is the same as the last challenge with one improvement.
 # in_array_advanced takes an additional boolean argument 'strict'.
-# If strict is true, in_array should care about leTteR CasIng.
+# If strict is true, in_array should care aboutleTt eR CasIng.
 # If strict is false, in_array should return true for any match.
 #
 # Difficulty:
@@ -22,18 +22,8 @@
 #Try writing it on a whiteboard or paper first
 def in_array_advanced (needle, haystack, strict)
   # Your code here
-<<<<<<< HEAD
-  # if strict == false
-  #   haystack.each { |word| return true if word == needle.downcase}
-  # else
-  #   haystack.each { |word| return true if word == needle}
-  # end
-  # false
-
   needle.downcase! if strict == false
   haystack.each { |word| return true if word == needle}
   false
 
-=======
->>>>>>> a27e985a082512b8706ff996c21bcd6320db76f3
 end

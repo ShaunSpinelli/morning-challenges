@@ -19,5 +19,17 @@
 #
 
 def unique (mylist)
-  # Your code here
+
+
+    updated_arr=[]
+
+    mylist.each {|item| updated_arr.push(item) if  !updated_arr.include?(item)}
+        
+    updated_arr
+
 end
+
+
+# x = [1,2,3,3]
+
+# puts unique(x)
