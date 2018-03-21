@@ -18,9 +18,14 @@
 #Try writing it on a whiteboard or paper first
 def in_array (needle, haystack)
   # Your code here
- haystack.each {|word| true if word == needle} #? true : false
+#  haystack.each {|word| return true if word == needle}
+#  false
+  haystack.each do |word|
+    if word == needle
+      return true
+    end
+  end
+  return false
   
-
 end
 
-in_array("hello", ["hi", "howdy", "hello"])

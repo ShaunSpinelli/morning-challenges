@@ -21,11 +21,19 @@
 def unique (mylist)
 
 
-    updated_arr=[]
+    # updated_arr=[]
+    # mylist.each {|item| updated_arr.push(item) if  !updated_arr.include?(item)}    
+    # updated_arr
 
-    mylist.each {|item| updated_arr.push(item) if  !updated_arr.include?(item)}
-        
-    updated_arr
+    updated_arr=[]
+  
+    mylist.each do |item| 
+      if !updated_arr.include?(item)
+        updated_arr.push(item)
+      end
+    end
+    
+    return updated_arr
 
 end
 
