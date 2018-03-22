@@ -28,5 +28,9 @@ def nthFibonacci (n)
   return n if n <= 1
   nthFibonacci(n-2) + nthFibonacci(n-1)
 
+  # array = [0, 1]
+  # while array.length <= n
+  #   array << array[-2] + array[-1]
+  # end
+  # return array[n]
 end
-
