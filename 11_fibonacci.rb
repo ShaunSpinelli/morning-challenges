@@ -4,7 +4,7 @@
 # subsequent number is the sum of the previous two.
 #
 # For example, the first seven Fibonacci numbers are: 0 1 1 2 3 5 8
-#
+#                                                     0 1 2 3 4 5 6
 # Write a method that will return the nth number of the sequence.
 #
 # The syntax is easy, getting your head around the algorithm is the challenge.
@@ -24,5 +24,9 @@
 #
 
 def nthFibonacci (n)
-  # Your code here    
+  # Your code here
+  return n if n <= 1
+  nthFibonacci(n-2) + nthFibonacci(n-1)
+
 end
+
