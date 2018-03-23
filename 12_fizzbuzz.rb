@@ -27,3 +27,20 @@
 #
 
 # Your code here
+def fizz_buzz(n)
+
+    arr = []
+
+    for  i in 1..n 
+        if i%3 != 0 && i%5 != 0
+            arr.push(i)  
+        elsif i%3 == 0 && i%5 == 0
+            arr.push("FizzBuzz")
+        else
+            arr.push("Fizz")  if  i%3 == 0
+            arr.push("Buzz")  if i%5 == 0 
+        end  
+    end
+    return arr[-1]   
+
+end
