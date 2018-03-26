@@ -33,4 +33,30 @@
 def firstNonRepeat (string)
   # Your code here
   # Whiteboard first!
+  char_arr = string.split("")
+
+  #frist attempt
+  # char_arr.each do |c|
+  #   return c if char_arr.count(c) ==1 
+  # end 
+  # return false
+
+  char_count = {}
+  
+  char_arr.each do |c|
+    if char_count[c] != nil
+      char_count[c] +=1
+    else
+      char_count[c] = 1
+    end
+  end
+  char_count.each do |key,value|
+    if char_count[key] == 1
+      return key 
+    end
+  end
+
+  false
+
 end
+# firstNonRepeat("aabbccdeefgg")
