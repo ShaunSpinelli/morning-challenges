@@ -41,6 +41,8 @@ def firstNonRepeat (string)
   # end 
   # return false
 
+  #second attenpt
+
   char_count = {}
   
   char_arr.each do |c|
@@ -50,13 +52,10 @@ def firstNonRepeat (string)
       char_count[c] = 1
     end
   end
-  char_count.each do |key,value|
-    if char_count[key] == 1
-      return key 
-    end
-  end
 
-  false
+   return char_count.key(1) if char_count.key(1) != nil
+   return false
+  
 
 end
 # firstNonRepeat("aabbccdeefgg")

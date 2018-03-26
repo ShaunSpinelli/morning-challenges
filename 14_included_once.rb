@@ -20,4 +20,16 @@
 
 def includedOnce (haystack, needle)
   # Your code here
+  item_count = {}
+
+  haystack.each do |word|
+    if item_count[word] == nil
+      item_count[word] = 1
+    else
+      item_count[word] += 1
+    end 
+  end
+
+  return true if item_count[needle] == 1
+  return false
 end
