@@ -24,4 +24,10 @@
 
 def ExesAndOhs(string)
   # yo' co' here
+  arr = [0,0] # x count at arr[0] , o count ar arr[1]
+  string.each_char do |c|
+    arr[0] += 1 if c.downcase == "x"
+    arr[1] += 1 if c.downcase == "o"
+  end
+  arr[0] == arr [1] ? true : false
 end
