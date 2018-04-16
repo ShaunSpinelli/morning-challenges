@@ -21,8 +21,8 @@ def group_fives(arr)
     updated_arr = Array.new(2) { Array.new() }
 
     arr.each do |n|
-    updated_arr[0].push(n) if divisible_by_five(n)
-    updated_arr[1].push(n) if !divisible_by_five(n) 
+        updated_arr[0].push(n) if divisible_by_five(n)
+        updated_arr[1].push(n) if !divisible_by_five(n) 
     end
 
     updated_arr
